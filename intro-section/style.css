@@ -121,6 +121,10 @@ nav {
   color: var(--AlmostBlack);
 }
 
+.hamburger-menu img{
+  cursor: pointer;
+}
+
 .nav-menu ul li {
   list-style-type: none;
   padding: 0 1.5rem;
