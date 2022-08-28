@@ -1,0 +1,255 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* END RESET */
+
+/* VARIABLES */
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+  --fw-bold: 500;
+  --fw-bolder: 700;
+  --paragraph: 1.125rem;
+}
+
+html,
+body {
+  font-family: "Epilogue", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--AlmostWhite);
+  box-sizing: border-box;
+}
+
+
+nav {
+  padding-top: 1.5rem;
+}
+.modal-dialog {
+  position: relative;
+  top: 20%;
+}
+.modal-header {
+  border: none;
+}
+.btn-close {
+  border: none;
+  box-shadow: none !important;
+}
+.mobile-nav li {
+  list-style-type: none;
+  padding: 0.5rem 0;
+}
+.mobile-nav li a {
+  text-decoration: none;
+  color: var(--AlmostBlack);
+}
+.mobile-nav li a:hover {
+  text-decoration: underline;
+  color: var(--AlmostBlack);
+}
+
+.nav-menu ul li {
+  list-style-type: none;
+  padding: 0 1.5rem;
+}
+
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: var(--AlmostBlack);
+}
+.nav-menu ul li a:hover{
+  text-decoration: underline;
+ 
+}
+.nav-buttons .primary {
+  background-color: var(--AlmostWhite);
+  color: var(--AlmostBlack);
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none !important;
+}
+.nav-buttons .secondary {
+  background-color: var(--AlmostWhite);
+  color: var(--AlmostBlack);
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: none !important;
+}
+.nav-buttons .primary:hover {
+  text-decoration: underline;
+}
+.nav-buttons .secondary:hover {
+  text-decoration: underline;
+}
+
+
+
+.dropdown-menu {
+  width: 180.075px;
+  min-height: 159.825px;
+  padding: 4px;
+  border-radius: 9.6px;
+  box-shadow: rgba(20, 20, 20, 0.15) 0px 0px 30px 0px;
+  background-color: var(--AlmostWhite);
+}
+.dropdown-menu2 {
+  min-height: 130.075px !important;
+}
+.mobile-planing {
+  position: relative;
+  right: 10px;
+}
+
+.dropdown-item {
+  padding: 0.3rem 0;
+  font-size: 16px;
+  color: var(--MediumGray) !important;
+}
+
+.dropdown-item:hover {
+  background-color: var(--AlmostWhite);
+  text-decoration: underline;
+}
+
+.svg-dropdown {
+  position: relative;
+  bottom: 2px;
+  right: 6px;
+}
+
+.container-intro {
+  margin-inline: 2rem;
+}
+
+.header-intro h1 {
+  font-size: 3rem;
+  font-weight: var(--fw-bolder);
+  color: var(--AlmostBlack);
+}
+.header-intro p {
+  font-size: var(--paragraph);
+  color: var(--MediumGray);
+}
+.primary-btn {
+  background-color: var(--AlmostBlack);
+  color: var(--AlmostWhite);
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0.1px !important;
+}
+.primary-btn:hover {
+  text-decoration: underline;
+}
+
+.client-container {
+  align-items: center;
+}
+.client-container img {
+  padding: 0rem 0.6rem;
+}
+
+@media (min-width: 1080px) {
+  .intro-content h1 {
+    text-align: left !important;
+    font-size: 4.5rem;
+  }
+  .intro-content p {
+    text-align: left !important;
+    font-size: 1.4rem;
+  }
+  .img-section {
+    min-height: 732px;
+  }
+  .img-container {
+    padding: 0 2rem;
+  }
+  .intro-content {
+    padding: 0 5rem;
+  }
+  .nav-menu {
+    display: block;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .hamburger-menu img {
+    display: none;
+  }
+}
